@@ -7,4 +7,11 @@ function FlickityTest() {
   });
 }
 
-$(document).ready(() => FlickityTest());
+function jqueryTest(){
+  ;
+}
+
+$(document).ready(() => {
+  FlickityTest();
+  jqueryTest();
+});

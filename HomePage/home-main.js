@@ -1,5 +1,6 @@
 //MAIN
-let $packeryGrid = $('.grid');
-flickityInit();
-packeryInit();
-giphyInit();
+$(document).ready(()=>{
+  flickityInit();
+  packeryInit();
+//  giphyInit();
+});

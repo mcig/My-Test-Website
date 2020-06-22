@@ -1,4 +1,4 @@
-function FlickityTest() {
+function flickityInit() {
   const idFlickityCarousel = '#test-flickity-carousel';
   $(idFlickityCarousel).flickity({
     cellAlign: 'center',
@@ -6,12 +6,3 @@ function FlickityTest() {
     pageDots:true
   });
 }
-
-function jqueryTest(){
-  ;
-}
-
-$(document).ready(() => {
-  FlickityTest();
-  jqueryTest();
-});

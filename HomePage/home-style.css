@@ -1,0 +1,58 @@
+<style media="screen">
+
+  .img-fluid {
+    max-width: 100%;
+    height: auto;
+  }
+  .carousel-item .img-fluid {
+    width:100%;
+    height:700px;
+  }
+  .carousel-cell {
+    margin-right: 30px;
+  }
+  .carousel-cell img{
+    display:block;
+    height: 300px;
+  }
+  .flickity-page-dots .dot{
+    background: transparent;
+    border: 2px solid white;
+  }
+  .grid{
+    background: #708090;
+  }
+
+  .grid-item,.grid-image-item {
+    width: 109px;
+    height: 109px;
+    background: #A9A9A9;
+    border: 4px solid #D3D3D3;
+  }
+  .grid-item.is-pointer-down {
+    background: #000000;
+  }
+  .packery-drop-placeholder {
+    outline: 3px dashed #444;
+    outline-offset: -6px;
+    /* transition position changing */
+    -webkit-transition: -webkit-transform 0.2s;
+            transition: transform 0.2s;
+  }
+  .grid-item-sm {
+    width: 90px;
+    height: 90px;
+  }
+  .grid-item-md {
+    width: 180px;
+    height: 180px;
+  }
+  .grid-item-lg {
+    width: 270px;
+    height: 270px;
+  }
+  .grid-item-xl {
+    width: 360px;
+    height: 360px;
+  }
+</style>

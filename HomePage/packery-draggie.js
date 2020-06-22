@@ -1,5 +1,4 @@
 let $packeryGrid = $('.grid');
-
 function draggieInit(){
   let $draggable = $('.draggable').draggabilly({
   });
@@ -10,6 +9,7 @@ function packeryInit(){
 
   //rect resizing
   let newH = ($(".grid-item-rect").height()) * 1.5;
+
   $(".grid-item-rect").css({'width':newH + 'px'})
 
   //packery init

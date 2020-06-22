@@ -1,18 +1,12 @@
 function giphyInit(){
-  $packeryGrid.find('.grid-image-item').each((i,gridImgItem) => {
-    giphyRandomFetcher(gridImgItem);
-    let draggie = new Draggabilly(gridImgItem);
-    // bind drag events to Packery
-    $packeryGrid.packery('bindDraggabillyEvents', draggie);
-  });
+  bindDraggie(".grid-image-item",true);
 }
 
-
 //these 2 are done
-function giphyRandomFetcher(domElement){
+function giphyRandomFetcher(domImgElementStr){
   const giphyApi = "http://api.giphy.com/v1/gifs/random?api_key=gUCtGBLQKcuEFL5bgR8PcgOgrevJcbz6&tag=g"
   asyncGiphyFetch(giphyApi).then(result=>{
-    $(domElement).attr("src",result);
+    $(domImgElementStr).attr("src",result);
   }).catch(err => $("body").prepend("<div class='alert alert-danger'>"+err+"</div>"));
 }
 

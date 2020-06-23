@@ -25,5 +25,6 @@ function giphyRandomFetcher(domImgElementStr) {
   asyncGiphyFetch(giphyApi).then(fetchedGif => {
     $(domImgElementStr).attr("src", fetchedGif.url);
     $(domImgElementStr.parentNode).css({"width":fetchedGif.width,"height":fetchedGif.height});
+    $packeryGrid.packery('layout');
   }).catch(err => $("body").prepend("<div class='alert alert-danger'>" + err + "</div>"));
 }

@@ -19,7 +19,7 @@ async function asyncGiphyFetch(giphyApi) {
 
 //these 2 are done
 function giphyRandomFetcher(domImgElementStr) {
-  const giphyApi = "http://api.giphy.com/v1/gifs/random?api_key=gUCtGBLQKcuEFL5bgR8PcgOgrevJcbz6&tag=g"
+  const giphyApi = "https://api.giphy.com/v1/gifs/random?api_key=gUCtGBLQKcuEFL5bgR8PcgOgrevJcbz6&tag=g"
   let gifWidth;
   let gifHeight;
   asyncGiphyFetch(giphyApi).then(fetchedGif => {

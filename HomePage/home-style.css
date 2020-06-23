@@ -24,17 +24,18 @@
 
   /*Packery Css*/
   .grid{
-    background: #696969;
+    background: #414345;
   }
+
   .grid-item,.grid-image-item {
-    background: #A9A9A9;
-    border: 6px solid #D3D3D3;
+    background: #FF8C00;
+    border: 6px solid #343A40;
   }
   .grid-item.is-pointer-down,.grid-image-item.is-pointer-down {
-    border: 6px solid #DC143C;
+    border: 6px solid #8B0000;
   }
   .packery-drop-placeholder {
-    outline: 3px dashed #444;
+    outline: 3px dashed #F5FFFA;
     outline-offset: -6px;
     /* transition position changing */
     -webkit-transition: -webkit-transform 0.2s;

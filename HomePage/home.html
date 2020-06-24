@@ -117,27 +117,31 @@
   <br><br>
   <hr><br>
 
-  <!--Cool Packery-->
+  <!--Packery And Isotope-->
   <div class="container">
     <h2>Moveable Boxes With Giphy Api <span class="badge badge-pill badge-secondary bg-primary text-light">Cool</span></h2>
     <h5>PS. If you like a gif, just double tap it to reach the url</h5>
     <a id="relayoutButton" class="btn btn-outline-warning">Relayout The Boxes</a>
     <a id="reloadGifsButton" class="btn btn-outline-info">Fetch New Gifs!</a>
+    <a id="showAllButton" class="btn btn-primary">Show All</a>
+    <a id="filterGifsButton" class="btn btn-danger">Filter Gifs</a>
+    <a id="filterBoxesButton" class="btn btn-warning">Filter Empty Boxes</a>
+
     <div class="grid">
-      <div class="grid-image-item">
-        <img class="randgifs" alt="randgif1">
+      <div class="grid-image-item randGifItem">
+        <img class="randgifImgs" alt="randgif1">
       </div>
-      <div class="grid-image-item">
-        <img class="randgifs" alt="randgif2">
+      <div class="grid-image-item randGifItem">
+        <img class="randgifImgs" alt="randgif2">
       </div>
-      <div class="grid-image-item">
-        <img class="randgifs" alt="randgif3">
+      <div class="grid-image-item randGifItem">
+        <img class="randgifImgs" alt="randgif3">
       </div>
-      <div class="grid-image-item">
-        <img class="randgifs" alt="randgif4">
+      <div class="grid-image-item randGifItem">
+        <img class="randgifImgs" alt="randgif4">
       </div>
-      <div class="grid-image-item">
-        <img class="randgifs" alt="randgif5">
+      <div class="grid-image-item randGifItem">
+        <img class="randgifImgs" alt="randgif5">
       </div>
       <div class="grid-item grid-item-sm text-center">Small</div>
       <div class="grid-item grid-item-md text-center">Medium</div>
@@ -158,6 +162,8 @@
   <script src="https://unpkg.com/packery@2/dist/packery.pkgd.min.js"></script>
   <!--Draggie CDN-->
   <script src="https://unpkg.com/draggabilly@2/dist/draggabilly.pkgd.min.js"></script>
+  <!--Isotope CDN-->
+  <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js"></script>
 
   <!--My Js files-->
   <script src="flickity.js"></script>

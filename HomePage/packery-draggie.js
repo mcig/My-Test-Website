@@ -23,7 +23,7 @@ function packeryInit(){
 function bindDraggie(classStr,giphyBool=false){
   // make all grid-items draggable
   $packeryGrid.find(classStr).each((i,gridItem) => {
-    if(giphyBool){
+    if(giphyBool){//also fetch gifs
       giphyRandomFetcher(gridItem.childNodes[1]);
     }
     let draggie = new Draggabilly(gridItem);

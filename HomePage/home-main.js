@@ -4,5 +4,5 @@ $(document).ready(()=>{
   packeryInit();
   giphyInit();
   flickityInit();
-  buttonsInit();
+  controlsInit();
 });

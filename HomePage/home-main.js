@@ -1,8 +1,8 @@
 //MAIN
-
 $(document).ready(()=>{
-  //ORDER IS IMPORTANT!!!
+  //giphyInit must always come after packeryInit
   packeryInit();
   giphyInit();
   flickityInit();
+  buttonsInit();
 });

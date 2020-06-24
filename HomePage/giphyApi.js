@@ -17,7 +17,6 @@ async function asyncGiphyFetch(giphyApi) {
     json.data.fixed_height_downsampled_height);
 }
 
-//these 2 are done
 function giphyRandomFetcher(domImgElementStr) {
   const giphyApi = "https://api.giphy.com/v1/gifs/random?api_key=gUCtGBLQKcuEFL5bgR8PcgOgrevJcbz6&tag=g"
   let gifWidth;

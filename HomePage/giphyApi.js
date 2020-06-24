@@ -13,8 +13,8 @@ class Gif {
 async function asyncGiphyFetch(giphyApi) {
   let response = await fetch(giphyApi);
   let json = await response.json();
-  return new Gif(json.data.fixed_height_downsampled_url, json.data.fixed_height_downsampled_width,
-    json.data.fixed_height_downsampled_height);
+  return new Gif(json.data.fixed_width_downsampled_url, json.data.fixed_width_downsampled_width,
+    json.data.fixed_width_downsampled_height);
 }
 
 function giphyRandomFetcher(domImgElementStr) {

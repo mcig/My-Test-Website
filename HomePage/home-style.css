@@ -30,13 +30,16 @@
   .grid-item,.grid-image-item {
     background: #FF8C00;
     border: 6px solid #343A40;
+    cursor: grab;
   }
   .grid-item.is-pointer-down,.grid-image-item.is-pointer-down {
     border: 6px solid #8B0000;
+    cursor: grabbing;
   }
   .packery-drop-placeholder {
     outline: 3px dashed #F5FFFA;
     outline-offset: -6px;
+    cursor: grabbing;
     /* transition position changing */
     -webkit-transition: -webkit-transform 0.2s;
             transition: transform 0.2s;

@@ -1,9 +1,4 @@
 <style media="screen">
-  /*Custom noselect class*/
-  .noselect {
-    user-select: none;
-  }
-
   /*Welcome carousel*/
   .img-fluid {
     max-width: 100%;

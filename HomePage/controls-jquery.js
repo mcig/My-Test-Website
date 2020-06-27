@@ -1,11 +1,13 @@
 function controlsInit() {
   gifsAndPackeryJquery();
   smoothScroll('#goToTopAnchor','#topHash');
+
+  //navbar animated toggle on click
+  $('.navbar-toggler').on('click',()=>animateNavButton('#toggledOn','#toggledOff'));
 }
 
 
 function jqueryDoubleClickMobileFriendly(strTarget){
-  //thx stackoverflow guy
   let doubleClicked = false;
   $(strTarget).on('click', (e) => {
       if (doubleClicked) {
@@ -25,6 +27,26 @@ function smoothScroll(idFromStr,idToStr){
       scrollTop: $(idToStr).offset().top
     }, 800, ()=>{window.location.hash = idToStr;});
   });
+}
+
+function animateNavButton(iconOnHash,iconOffHash){
+  let $svgOn = $('svg'+ iconOnHash);
+  let $svgOff = $('svg'+ iconOffHash);
+  if($svgOn.css('display')=='none'){//if not clicked
+    hide($svgOff);
+    show($svgOn);
+  }
+  else{//if clicked
+    hide($svgOn);
+    show($svgOff);
+  }
+
+  function hide($jquerySvg){
+    $jquerySvg.css('display','none');
+  }
+  function show($jquerySvg){
+    $jquerySvg.css('display','block');
+  }
 }
 
 function gifsAndPackeryJquery(){
